@@ -1,0 +1,90 @@
+:root {
+  --color-text-primary: #002324;
+  --color-text-secondary: #fff;
+  --color-primary: #6608c5;
+}
+
+/* styles reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* end of styles reset */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.header-title span {
+  color: var(--color-primary);
+}
+
+.about {
+  color: var(--color-text-secondary);
+  background-color: var(--color-primary);
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.about-description {
+  margin-left: 60px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-primary {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.button-primary:hover {
+  color: var(--color-text-secondary);
+  background-color: var(--color-primary);
+}
+
+/* Notes from class */
+/* .heading {
+  color: rgb(48 170 98 / 48%);
+  color: rgba(48, 170, 98, 0.48);
+} */

@@ -4,37 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Font import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/css/index.css" />
+
     <title>Raquel Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>
-        Hello, my name is Raquel Albuquerque <br />I'm a Full Stack Web
-        Developer
+    <header class="header">
+      <h1 class="header-title">
+        Hello, my name is <span>Raquel Albuquerque</span><br />I'm a Full Stack
+        Web Developer
       </h1>
-      <a href="">Find out more</a>
+      <a href="" class="button button-primary">Find out more</a>
     </header>
 
     <main>
       <section class="about">
         <h2>About me</h2>
-        <div>
+        <div class="about-content">
           <img
             src="./assets/img/maria_albertina_developer.webp"
             alt="developer maria albertina working on a computer"
-            width="400"
+            class="about-img"
           />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-            minima dicta placeat numquam culpa exercitationem! Eum at similique
-            esse ullam quaerat, doloremque tenetur ratione est iste! Aperiam
-            rerum nobis vel.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic,
-            error voluptas, officia eius earum nemo explicabo aliquam.
-          </p>
-          <a href="">View resume</a>
+          <div class="about-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              minima dicta placeat numquam culpa exercitationem! Eum at
+              similique esse ullam quaerat, doloremque tenetur ratione est iste!
+              Aperiam rerum nobis vel.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic,
+              error voluptas, officia eius earum nemo explicabo aliquam.
+            </p>
+            <a href="">View resume</a>
+          </div>
         </div>
         <blockquote>
           Don't comment bad code - rewrite it.
