@@ -1,7 +1,7 @@
 :root {
   --color-text-primary: #002324;
   --color-text-secondary: #fff;
-  --color-primary: #6608c5;
+  --color-primary: #2b41a3;
   --color-secondary: #fff;
   --color-tertiary: black;
 }
@@ -92,6 +92,12 @@ h2 {
   font-weight: 500;
   line-height: 1.4;
   color: var(--color-text-primary);
+}
+
+@media (max-width: 992px) {
+  .header-title {
+    text-align: center;
+  }
 }
 
 .header-title span {
@@ -188,6 +194,16 @@ h2 {
   margin: 30px 0;
 }
 
+.projects-social-links {
+  background-color: var(--color-tertiary);
+}
+
+.projects-social-links p {
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .projects-social-links-container ul {
   display: flex;
   justify-content: center;
@@ -217,14 +233,4 @@ h2 {
 }
 .youtube {
   background-image: url(../../assets/icons/icon-youtube.png);
-}
-
-.projects-social-links {
-  background-color: var(--color-tertiary);
-}
-
-.projects-social-links p {
-  color: var(--color-text-secondary);
-  text-align: center;
-  padding-bottom: 10px;
 }
