@@ -3,6 +3,7 @@
   --color-text-secondary: #fff;
   --color-primary: #6608c5;
   --color-secondary: #fff;
+  --color-tertiary: black;
 }
 
 /* styles reset */
@@ -35,7 +36,7 @@ h2 {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  padding: 10px 12px;
+  padding: 8px 10px;
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
@@ -65,6 +66,7 @@ h2 {
   color: var(--color-secondary);
   background-color: var(--color-primary);
   border: 2px solid var(--color-primary);
+  margin-left: 15px;
 }
 
 .button-tertiary:hover {
@@ -101,10 +103,6 @@ h2 {
   background-color: var(--color-primary);
 }
 
-.about h2 {
-  text-align: center;
-}
-
 @media (min-width: 992px) {
   .about-content {
     display: flex;
@@ -115,7 +113,15 @@ h2 {
 
 .about-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    display: block;
+    margin: 40px auto;
+  }
 }
 
 .about-description {
@@ -124,6 +130,17 @@ h2 {
 
 .about-quote {
   text-align: center;
+  height: 100px;
+}
+
+.about-quote blockquote {
+  font-size: 24px;
+  font-style: italic;
+  margin: 20px 10px;
+}
+
+.about-quote cite {
+  font-size: 14px;
 }
 
 @media (min-width: 992px) {
@@ -134,6 +151,48 @@ h2 {
   }
 }
 
+.projects-image {
+  margin: 20px 30px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .projects-description {
+    margin: 0 30px;
+  }
+
+  .projects-image {
+    display: block;
+    margin: 40px auto;
+  }
+}
+
+.contact {
+  color: var(--color-text-secondary);
+  background-color: var(--color-primary);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container p {
+  padding: 0 80px;
+}
+
+.contact-container a {
+  margin: 30px 0;
+}
+
+.projects-social-links-container ul {
+  display: flex;
+  justify-content: center;
+}
+
 .social-link {
   display: inline-block;
   width: 35px;
@@ -142,6 +201,7 @@ h2 {
   background-repeat: no-repeat;
   background-color: var(--color-secondary);
   border-radius: 50%;
+  margin: 20px 10px;
 }
 
 .github {
@@ -160,11 +220,11 @@ h2 {
 }
 
 .projects-social-links {
-  background-color: black;
+  background-color: var(--color-tertiary);
 }
 
-/* Notes from class */
-/* .heading {
-  color: rgb(48 170 98 / 48%);
-  color: rgba(48, 170, 98, 0.48);
-} */
+.projects-social-links p {
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding-bottom: 10px;
+}
