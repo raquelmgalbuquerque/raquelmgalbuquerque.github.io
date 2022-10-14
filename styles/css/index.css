@@ -3,7 +3,7 @@
   --color-text-secondary: #fff;
   --color-primary: #2b41a3;
   --color-secondary: #fff;
-  --color-tertiary: black;
+  --color-tertiary: #002324;
 }
 
 /* styles reset */
@@ -107,6 +107,8 @@ h2 {
 .about {
   color: var(--color-text-secondary);
   background-color: var(--color-primary);
+  height: 700px;
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
 }
 
 @media (min-width: 992px) {
@@ -177,6 +179,7 @@ h2 {
 .contact {
   color: var(--color-text-secondary);
   background-color: var(--color-primary);
+  clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .contact-container {
@@ -209,15 +212,20 @@ h2 {
   justify-content: center;
 }
 
-.social-link {
+.social-item {
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-size: 35px;
-  background-repeat: no-repeat;
   background-color: var(--color-secondary);
   border-radius: 50%;
-  margin: 20px 10px;
+  margin: 30px 10px;
+  padding: 5px;
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-repeat: no-repeat;
 }
 
 .github {
