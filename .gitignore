@@ -1,5 +1,8 @@
 # add node modules
-node_modules
+node_modules/
 
 # ignore package-lock
 package-lock.json
+
+# former css file
+styles/_.css
